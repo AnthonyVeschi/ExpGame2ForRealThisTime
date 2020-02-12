@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SurviveScene1.unity
     guid: 6d9ee956e6c6e3141974d13f6649bd6a
+  - enabled: 1
+    path: Assets/Scenes/CirclesUnite1.unity
+    guid: 8b38b03c935363141940697d2660de1d
+  - enabled: 1
+    path: Assets/Scenes/CirclesUnite2.unity
+    guid: 3041977d0e1ff074f9106d6a9540d4af
   m_configObjects: {}
