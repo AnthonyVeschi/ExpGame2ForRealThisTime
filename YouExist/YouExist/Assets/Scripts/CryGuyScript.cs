@@ -39,6 +39,6 @@ public class CryGuyScript : MonoBehaviour
         canvas.SetActive(true);
 
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene("SexScene");
+        SceneManager.LoadScene("CoffeeScene");
     }
 }
