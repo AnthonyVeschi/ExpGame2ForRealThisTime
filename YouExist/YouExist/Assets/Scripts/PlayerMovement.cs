@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
+    bool listenToInput = true;
+
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
     Vector2 movement;
@@ -22,7 +24,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!listenToInput) { return; }
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+    }
+
+    public void stopMoving()
+    {
+        listenToInput = false;
     }
 
 }
