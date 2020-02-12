@@ -13,6 +13,10 @@ public class DetermineButtonScript : MonoBehaviour
 
     public GameObject canSupportLife;
 
+    public GameObject staticVideo;
+
+    public Camera cam;
+
     public GameObject electron;
     private Animator anim;
 
@@ -86,6 +90,14 @@ public class DetermineButtonScript : MonoBehaviour
     IEnumerator ChangeScene()
     {
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene("StaticFromUniverse");
+        AudioSource[] camAudios = cam.GetComponents<AudioSource>();
+        for (int i = 0; i < camAudios.Length; i++)
+        {
+            camAudios[i].enabled = false;
+        }
+        staticVideo.SetActive(true);
+
+        yield return new WaitForSeconds(2.5f);
+        SceneManager.LoadScene("ExistScene");
     }
 }
