@@ -369,8 +369,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155976763}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.9906, y: -0.82772, z: -66.00781}
+  m_LocalRotation: {x: -0, y: -0, z: -0.04354476, w: 0.99905145}
+  m_LocalPosition: {x: -7.120095, y: -0.34628868, z: -66.00781}
   m_LocalScale: {x: 0.9, y: 1, z: 1}
   m_Children:
   - {fileID: 1454475122}
@@ -381,7 +381,7 @@ Transform:
   - {fileID: 1993584913}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -4.991}
 --- !u!1 &281584093
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,7 +395,6 @@ GameObject:
   - component: {fileID: 281584099}
   - component: {fileID: 281584098}
   - component: {fileID: 281584097}
-  - component: {fileID: 281584096}
   - component: {fileID: 281584095}
   m_Layer: 0
   m_Name: CryGuy
@@ -432,25 +431,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loud: 1
   canvas: {fileID: 1136967383}
---- !u!95 &281584096
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 281584093}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6928dc8a90b5584418db753ecdb95090, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!82 &281584097
 AudioSource:
   m_ObjectHideFlags: 0
